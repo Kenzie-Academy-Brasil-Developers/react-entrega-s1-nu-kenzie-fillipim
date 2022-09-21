@@ -1,0 +1,23 @@
+.illustration{
+    width: 65%;
+    position: relative;
+}
+
+#image1{
+    position: absolute;
+    top: -35%;
+    right: 3%;
+}
+
+#image2{
+    position: absolute;
+    z-index: 3;
+    top: 39%;
+    left: 12%;
+}
+#image3{
+    position: absolute;
+    z-index: 2;
+    top: 67%;
+    right: 20%;   
+}
