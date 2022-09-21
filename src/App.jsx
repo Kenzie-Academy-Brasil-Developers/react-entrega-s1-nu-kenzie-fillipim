@@ -4,11 +4,17 @@ import "./CSS/buttons.css"
 import "./CSS/inputs.css"
 import { Welcome } from './pages/Welcome';
 import { HomePage } from './pages/HomePage';
+import { useState } from 'react';
 
 function App() {
+  const [page, setPage] = useState("welcome")
+
+  function togglePages() {
+    page === "welcome" ? setPage("home") : setPage("welcome")
+  }
   return (
-    <div className="App">
-      <HomePage/>      
+    <div className={page === "welcome" ? "App AppDark" : "App"}>
+      {page === "welcome" ? <Welcome togglePage={togglePages} /> : <HomePage togglePage={togglePages} />}    
     </div>
   );
 }

@@ -6,7 +6,7 @@ import { useState } from "react"
 import "./index.css"
 import { Launchs } from "../../components/LauchList/index."
 
-export const HomePage = () => {
+export const HomePage = ({togglePage}) => {
 
     const [listTransactions, setListTransactions] = useState([
         { description: "Salário recebido", type: "entrada", value: 2500 },
@@ -15,7 +15,7 @@ export const HomePage = () => {
     
     return (
         <>
-        <Header/>
+        <Header logout={togglePage}/>
         <main className="container-home">
             <section className="field-values" >
             <Form/>
