@@ -18,16 +18,18 @@ form > button{
 .label-box:nth-child(1n + 2){
     display: block;
     width: 40%;
-    margin: 0 auto;
 }
-.value{
-    display: flex;
+.label-box:nth-child(2n + 2){
+    margin-right: auto;
 }
-.value > input{
-    width: 90%;
-    background-color: var(--grey-1);
+.input-value{
+    position: relative;
 }
-.value > span{
-    font-weight: bold;
-}
+.input-value::after{
+    content: "R$";
+    position: absolute;
+    top: 17px;
+    right: 14px;
+    font-size: 20px;
 
+}

@@ -12,18 +12,27 @@ export const HomePage = ({togglePage}) => {
         { description: "Salário recebido", type: "entrada", value: 2500 },
         { description: "Conta de luz", type: "saída", value: -150 }
     ]);
+
+    function addLaunch(newTransation) {
+        setListTransactions([...listTransactions, newTransation])
+    }
+
+    function handleTransation(transation) {
+        const newList = listTransactions.filter(({description}) => description !== transation)
+        setListTransactions(newList)
+    }
     
     return (
         <>
         <Header logout={togglePage}/>
         <main className="container-home">
             <section className="field-values" >
-            <Form/>
-            <TotalMoney/>
+            <Form runLaunch={addLaunch}/>
+            <TotalMoney list={listTransactions}/>
             </section>
             <section className="field-launchs">
                 <FiltersHeader/>
-                <Launchs list={listTransactions} />
+                <Launchs list={listTransactions} deleteLauch={handleTransation} />
             </section>
         </main>
         </>

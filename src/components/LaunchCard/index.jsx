@@ -7,7 +7,7 @@ export const LaunchCard = ({description, type, value, deleteLaunch}) => {
             <ul>
                 <li className="title-3">{description}</li>
                 <li className="text-1">R$ {value}</li>
-                <li><button type="button" onClick={() => deleteLaunch(description)} ><FaTrash className="trash-button"/></button></li>
+                <li><button type="button"  className="trash-button" onClick={() => deleteLaunch(description)} ><FaTrash/></button></li>
             </ul>
             <span className="text-1">{type}</span>
         </li>
