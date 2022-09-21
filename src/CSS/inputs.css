@@ -1,0 +1,13 @@
+.input-1{
+    background-color: var(--grey-1);
+    padding: calc(1rem - 2px);
+    border-radius: 8px;
+    margin: .7rem 0;
+}
+.select-1{
+    background-color: var(--grey-1);
+    padding: calc(1rem - 2px);
+    border-radius: 8px;
+    margin: 1rem 0;
+    width: 100%;
+}

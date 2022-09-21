@@ -1,0 +1,15 @@
+.container-home{
+    padding: 40px 214px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.App{
+    background-color: #fff;
+}
+.field-values{
+    width: 40%;
+}
+.field-launchs{
+    width: 55%;
+}
