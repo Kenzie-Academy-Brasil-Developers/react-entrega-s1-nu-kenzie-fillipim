@@ -4,9 +4,7 @@
     display: flex;
     justify-content: space-between;
 }
-.App{
-    background-color: #fff;
-}
+
 .field-values{
     width: 40%;
 }
