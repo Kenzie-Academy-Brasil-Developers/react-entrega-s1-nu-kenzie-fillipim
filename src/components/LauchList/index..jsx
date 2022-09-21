@@ -2,13 +2,13 @@ import "./index.css";
 import NoLaunchs from "../../assets/NoCard.svg";
 import { LaunchCard } from "../LaunchCard";
 
-export const Launchs = ({ list }) => {
+export const Launchs = ({ list, deleteLauch }) => {
   return (
     <>
       {list.length > 0 ? (
         <ul className="list-container">
-          {list.map(({description, type, value}) => (
-            <LaunchCard description={description} type={type} value={value} />
+          {list.map(({description, type, value}, idx) => (
+            <LaunchCard key={idx} description={description} type={type} value={value} deleteLaunch={deleteLauch} />
           ))}
         </ul>
       ) : (

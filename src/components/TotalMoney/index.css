@@ -5,8 +5,9 @@
     display: flex;
     flex-wrap: wrap;
 }
-.value{
+.total-value{
     margin-left: auto;
     color: var(--primal-color);
     font-weight: 700;
+    text-align: center
 }
