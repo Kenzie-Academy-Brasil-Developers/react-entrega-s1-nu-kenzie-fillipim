@@ -1,0 +1,38 @@
+.button-1{
+    color: #fff;
+    font-size: var(--text-size-4);
+    background-color: var(--primal-color);
+    padding: calc(1rem - 2px);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.button-1:hover{
+    background-color: var(--primal-color-2);
+}
+
+.button-2{
+    background-color: var(--grey-2);
+    padding: .7rem .9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.button-2:hover{
+    background-color: var(--grey-3);
+    color: #fff;
+}
+.button-2:active{
+    background-color: var(--primal-color);
+    color: #fff;
+}
+.trash-button{
+    padding: .3rem;
+    background-color: var(--grey-2);
+    cursor: pointer;
+    transition: all .3s;
+}
+.trash-button:hover{
+    background-color: var(--grey-3);
+    color: #fff;
+}

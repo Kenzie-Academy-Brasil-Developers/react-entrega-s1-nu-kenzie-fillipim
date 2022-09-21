@@ -1,0 +1,32 @@
+.launch-card{
+    padding: 1rem;
+    background-color: var(--grey-1);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    transition: all .3s;
+}
+.launch-card:hover{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 42px -12px rgba(0, 0, 0, 0.25);
+}
+.launch-card-input{
+    border-left: 4px solid var(--secondary-color);
+}
+.launch-card-output{
+    border-left: 4px solid var(--grey-2);
+}
+
+.launch-card > ul{
+    display: flex;
+}
+.launch-card > ul > li:nth-child(2n + 2){
+    margin-left: auto;
+    margin-right: 3rem;
+}
+.launch-card > span{
+    display: block;
+    padding-top: 1.45rem;
+}
+.text-1{
+    color: var(--grey-4);
+}

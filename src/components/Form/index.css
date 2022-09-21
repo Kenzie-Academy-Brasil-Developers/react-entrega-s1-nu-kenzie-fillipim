@@ -1,0 +1,33 @@
+form{
+    padding: 2.4rem 1.7rem;
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+form > button{
+    width: 100%;
+}
+.label-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.label-box:nth-child(1n + 2){
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+}
+.value{
+    display: flex;
+}
+.value > input{
+    width: 90%;
+    background-color: var(--grey-1);
+}
+.value > span{
+    font-weight: bold;
+}
+

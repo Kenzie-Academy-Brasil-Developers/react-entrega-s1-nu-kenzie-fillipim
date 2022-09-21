@@ -25,4 +25,5 @@
 .text-2{
     font-size: var(--text-size-5);
     font-weight: var(--font-weigth-regular);
+    color: var(--grey-3);
 }

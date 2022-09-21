@@ -8,15 +8,6 @@
 .slogan > h2, .slogan > img, .slogan > span{
     margin-bottom: calc(2rem - 2px);
 }
-button{
-    color: #fff;
-    font-size: var(--text-size-4);
-    background-color: var(--primal-color);
+.slogan > button{
     width: 70%;
-    padding: calc(1rem - 2px);
-    border-radius: 8px;
-    cursor: pointer;
-}
-button:hover{
-    background-color: var(--primal-color-2);
 }
