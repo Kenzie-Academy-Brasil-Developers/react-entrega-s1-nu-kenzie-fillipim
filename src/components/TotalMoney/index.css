@@ -4,6 +4,8 @@
     border-radius: 4px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 .total-value{
     margin-left: auto;

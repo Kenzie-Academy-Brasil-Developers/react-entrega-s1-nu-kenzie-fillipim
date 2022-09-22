@@ -18,6 +18,17 @@
     cursor: pointer;
     transition: all .3s;
 }
+.button-active{
+    background-color: var(--primal-color);
+    color: #fff;
+    transition: all .3s;
+    padding: .7rem .9rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.button-active:hover{
+    background-color: var(--primal-color);
+}
 .button-2:hover{
     background-color: var(--grey-3);
     color: #fff;
