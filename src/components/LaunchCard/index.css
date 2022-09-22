@@ -4,6 +4,7 @@
     border-radius: 8px;
     margin-bottom: 2rem;
     transition: all .3s;
+    animation: fade-slide-top 1s ease;
 }
 .launch-card:hover{
     background: #FFFFFF;

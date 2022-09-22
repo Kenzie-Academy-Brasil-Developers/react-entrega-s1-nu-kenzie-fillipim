@@ -2,6 +2,7 @@ import './CSS/App.css';
 import "./CSS/texts.css"
 import "./CSS/buttons.css"
 import "./CSS/inputs.css"
+import "./CSS/animations.css"
 import { Welcome } from './pages/Welcome';
 import { HomePage } from './pages/HomePage';
 import { useState } from 'react';
