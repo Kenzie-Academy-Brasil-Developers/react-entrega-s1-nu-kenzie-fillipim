@@ -1,0 +1,30 @@
+@keyframes fade-slide-left {
+    0%{
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-slide-rigt {
+    0%{
+        transform: translateX(10%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-slide-top {
+    0%{
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

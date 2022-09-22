@@ -1,0 +1,26 @@
+.container-home{
+    padding: 40px 20px;
+}
+@media (min-width: 520px) {
+    .container-home{
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1200px) {
+    .container-home{
+        width: 1100px;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .field-values{
+        width: 40%;
+        animation: fade-slide-left 1s ease;
+    }
+    .field-launchs{
+        width: 55%;
+        animation: fade-slide-rigt 1s ease;
+    }
+}

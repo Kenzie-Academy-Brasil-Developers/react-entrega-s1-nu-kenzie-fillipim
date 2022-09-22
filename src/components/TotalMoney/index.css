@@ -1,0 +1,15 @@
+.total-money{
+    padding: 2.4rem 1.7rem;
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.total-value{
+    margin-left: auto;
+    color: var(--primal-color);
+    font-weight: 700;
+    text-align: center
+}

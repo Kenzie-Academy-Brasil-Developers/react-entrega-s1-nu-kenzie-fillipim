@@ -1,0 +1,34 @@
+.slogan{
+    text-align: center;
+    margin: 0 auto;
+}
+.slogan > h2, .slogan > img, .slogan > span{
+    margin-bottom: calc(2rem - 2px);
+}
+.slogan > button{
+    width: 100%;
+}
+@media (min-width: 520px) {
+    .slogan{
+        width: 335px;
+    }
+}
+@media (min-width: 1200px) {
+    .slogan{
+        width: 350px;
+        display: flex;
+        text-align: start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 0 auto 0 0;
+        animation: fade-slide-left 1s ease;
+    }
+    .slogan > h2, .slogan > img, .slogan > span{
+        margin-bottom: calc(2rem - 2px);
+    }
+    .slogan > button{
+        width: 70%;
+    }
+    
+}
+
