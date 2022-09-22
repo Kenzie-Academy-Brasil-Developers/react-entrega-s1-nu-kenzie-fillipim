@@ -1,11 +1,18 @@
-.filters-header{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 37px;
-}
 .filters-header > ul{
     display: flex;
+    margin: 1rem 0;
 }
 .filters-header > ul > li{
-    margin: 0 .5rem;
+    margin-right: .5rem;
 }
+
+
+@media (min-width: 1200px) {
+    .filters-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 37px;
+    }
+}
+ 
