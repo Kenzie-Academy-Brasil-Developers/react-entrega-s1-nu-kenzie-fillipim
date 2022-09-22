@@ -17,8 +17,10 @@
     
     .field-values{
         width: 40%;
+        animation: fade-slide-left 1s ease;
     }
     .field-launchs{
         width: 55%;
+        animation: fade-slide-rigt 1s ease;
     }
 }

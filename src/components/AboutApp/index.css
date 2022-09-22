@@ -21,6 +21,7 @@
         align-items: flex-start;
         flex-direction: column;
         margin: 0 auto 0 0;
+        animation: fade-slide-left 1s ease;
     }
     .slogan > h2, .slogan > img, .slogan > span{
         margin-bottom: calc(2rem - 2px);

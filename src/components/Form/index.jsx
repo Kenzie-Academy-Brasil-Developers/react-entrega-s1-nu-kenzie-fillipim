@@ -1,21 +1,29 @@
 import "./index.css"
 import { useState } from "react"
+import { Toast } from "../Toast/Toast.js";
 
 export const Form = ({runLaunch}) => {
     const [description, setDescription] = useState("");
     const [value,  setValue] = useState(0);
     const [typeValue, setTypeValue] = useState("");
 
-    const launch = { description: description, type: typeValue, value: parseInt(value) };
+    function checksLaunch() {
+        if(description === "" || value ==="" || typeValue === "") {
+            Toast("Preencha Todos os campos!","#ff0000")
+        }else{
+            runLaunch({ description: description, type: typeValue, value: parseInt(value) })
+        }
+    }
 
     return (
-        <form onSubmit={(e) => {e.preventDefault(); runLaunch(launch); setDescription(""); setValue(0)}}>
+        <form onSubmit={(e) => {e.preventDefault(); checksLaunch(); setDescription(""); setValue("")}}>
             <label className="label-box" htmlFor="description">
             Descrição
                 <input 
                 name="description" 
                 className="input-1" 
-                type="text" 
+                type="text"
+                value={description} 
                 placeholder="Digite aqui sua descrição"
                 onChange={(e) => setDescription(e.target.value)}/>
                 <span className="text-2">Ex: Compra de roupas</span>
@@ -27,6 +35,7 @@ export const Form = ({runLaunch}) => {
                 name="moneyValue" 
                 type="text" 
                 placeholder="1" 
+                value={value}
                 onChange={(e) => setValue(e.target.value)}
                     />
             </div>
