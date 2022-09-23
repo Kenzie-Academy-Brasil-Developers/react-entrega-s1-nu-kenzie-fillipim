@@ -27,7 +27,9 @@
 .launch-card > span{
     display: block;
     padding-top: 1.45rem;
+    color: var(--grey-4);
 }
-.text-1{
+
+.launch-card > ul > .text-1{
     color: var(--grey-4);
 }

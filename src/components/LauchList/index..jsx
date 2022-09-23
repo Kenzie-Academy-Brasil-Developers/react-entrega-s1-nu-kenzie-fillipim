@@ -1,37 +1,30 @@
 import "./index.css";
-import NoLaunchs from "../../assets/NoCard.svg";
+import NoLaunchs from "../../assets/img/NoCard.svg";
 import { LaunchCard } from "../LaunchCard";
 
-export const Launchs = ({ list, deleteLauch, filterValue }) => {
-    const filter = list.filter((launch) => launch.type === filterValue)
-    
-    function checksLists() {
-      if(filterValue === "todos" && list.length > 0) {
-        return true
-      }else if(filter.length === 0 && list.length > 0) {
-        return false
-      }else if( filter.length === 0 ) {
-        return false
-      }
-      return true
-    }
+export const Launchs = ({ list, deleteTransaction }) => {
   return (
     <>
-      {checksLists() ? (
+      {list.length > 0 ? (
         <ul className="list-container">
-          {filterValue === "todos" ? list.map(({description, type, value}, idx) => (
-            <LaunchCard key={idx} description={description} type={type} value={value} deleteLaunch={deleteLauch} />
-          )) : filter.map(({description, type, value}, idx) => (
-            <LaunchCard key={idx} description={description} type={type} value={value} deleteLaunch={deleteLauch} />
+          {list.map(({ description, type, value }, id) => (
+            <LaunchCard
+              key={id}
+              description={description}
+              type={type}
+              value={value}
+              deleteTransaction={deleteTransaction}
+            />
           ))}
         </ul>
       ) : (
         <div className="no-cards">
-            <span className="title-2">Você ainda não possui nenhum lançamento</span>
-            <img src={NoLaunchs} alt="" />
+          <span className="title-2">
+            Você ainda não possui nenhum lançamento
+          </span>
+          <img src={NoLaunchs} alt="Ilustracão de Lista" />
         </div>
-      )
-      }
+      )}
     </>
   );
 };
