@@ -1,13 +1,13 @@
-import logo from "../../assets/logoDark.svg"
-import "./index.css"
+import logo from "../../assets/img/logoDark.svg";
+import "./index.css";
 
-export const Header = ({logout}) => {
-    return (
-        <header className="menu-header">
-            <nav>
-            <img src={logo} alt="" />
-            <button className="button-2" type="button" onClick={() => logout()}>Inicio</button>
-            </nav>
-        </header>
-    )
-}
+export const Header = ({ logout }) => (
+  <header className="menu-header">
+    <nav>
+      <img src={logo} alt="Nu Kenzie Logo" />
+      <button className="button-2" type="button" onClick={() => logout()}>
+        Inicio
+      </button>
+    </nav>
+  </header>
+);

@@ -1,13 +1,11 @@
 import React from "react";
-import "./index.css"
-import { SloganApp } from "../../components/AboutApp";
+import { AbountApp } from "../../components/AbountApp";
 import { Ilustration } from "../../components/Ilustration";
+import "./index.css";
 
-export const Welcome = ({togglePage}) => {
-    return (
-        <main className="container">
-        <SloganApp callback={togglePage}/>
-        <Ilustration/>
-        </main>
-    )
-}
+export const Welcome = ({ togglePage }) => (
+  <main className="container">
+    <AbountApp togglePage={togglePage} />
+    <Ilustration />
+  </main>
+);
