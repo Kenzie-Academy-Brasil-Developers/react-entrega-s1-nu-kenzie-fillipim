@@ -1,0 +1,17 @@
+.no-cards{
+    animation: fade-slide-top 1s ease;
+}
+.no-cards > span{
+    display: block;
+    padding-bottom: 1rem;
+    font-size: var(--text-size-4);
+}
+.no-cards > img {
+    width: 100%;
+}
+
+@media (min-width: 520px) {
+    .no-cards > span{
+        font-size: var(--text-size-2);
+    }
+}

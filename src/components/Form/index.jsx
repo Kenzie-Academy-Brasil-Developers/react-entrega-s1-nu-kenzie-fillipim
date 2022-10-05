@@ -5,7 +5,9 @@ import "./index.css";
 export const Form = ({ runTransations }) => {
   const [description, setDescription] = useState("");
   const [transationValue, setValue] = useState("");
-  const [typeValue, setTypeValue] = useState("");
+  const [typeValue, setTypeValue] = useState("entrada");
+
+  console.log(typeValue);
 
   function checksLaunch() {
     if (!description || !transationValue || !typeValue) {
@@ -67,10 +69,8 @@ export const Form = ({ runTransations }) => {
         <select
           className="select-1"
           name="typeValue"
-          id=""
           onChange={(e) => setTypeValue(e.target.value)}
         >
-          <option value="">Tipo</option>
           <option value="entrada">Entrada</option>
           <option value="saida">Saida</option>
         </select>

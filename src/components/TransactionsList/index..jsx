@@ -1,14 +1,14 @@
 import "./index.css";
 import NoLaunchs from "../../assets/img/NoCard.svg";
-import { LaunchCard } from "../LaunchCard";
+import { TransactionCard } from "../TransactionCard";
 
-export const Launchs = ({ list, deleteTransaction }) => {
+export const Transactions = ({ list, deleteTransaction }) => {
   return (
     <>
       {list.length > 0 ? (
         <ul className="list-container">
           {list.map(({ description, type, value }, id) => (
-            <LaunchCard
+            <TransactionCard
               key={id}
               description={description}
               type={type}

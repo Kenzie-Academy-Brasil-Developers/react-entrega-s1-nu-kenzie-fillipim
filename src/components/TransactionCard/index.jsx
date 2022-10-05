@@ -1,7 +1,7 @@
 import "./index.css";
 import { FaTrash } from "react-icons/fa";
 
-export const LaunchCard = ({ description, type, value, deleteTransaction }) => {
+export const TransactionCard = ({ description, type, value, deleteTransaction }) => {
   const transationValue = parseFloat(value).toFixed(2);
 
   return (
