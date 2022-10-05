@@ -2,7 +2,7 @@
     text-align: center;
     margin: 0 auto;
 }
-.slogan > h2, .slogan > img, .slogan > span{
+.slogan > h2, .slogan > img, .slogan > p{
     margin-bottom: calc(2rem - 2px);
 }
 .slogan > button{

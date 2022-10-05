@@ -1,7 +1,0 @@
-.no-cards{
-    animation: fade-slide-top 1s ease;
-}
-.no-cards > span{
-    display: block;
-    padding-bottom: 1rem;
-}

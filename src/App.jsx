@@ -15,11 +15,15 @@ function App() {
     page === "welcome" ? setPage("home") : setPage("welcome");
   }
   return (
-    <div className={page === "welcome" ? "App AppDark" : "App"}>
+    <div className={`App ${page === "welcome" && "AppDark"}`}>
       {page === "welcome" ? (
         <Welcome togglePage={togglePages} />
       ) : (
-        <HomePage togglePage={togglePages} listTransactions={listTransactions} setListTransactions={setListTransactions} />       
+        <HomePage
+          togglePage={togglePages}
+          listTransactions={listTransactions}
+          setListTransactions={setListTransactions}
+        />
       )}
     </div>
   );
