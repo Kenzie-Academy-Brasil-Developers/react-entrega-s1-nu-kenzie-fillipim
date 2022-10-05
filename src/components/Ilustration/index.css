@@ -10,7 +10,7 @@
     
     #image1{
         position: absolute;
-        top: -35%;
+        top: -50%;
         right: 3%;
         display: block;
         animation: ilustration-fade-slide-top 1s ease;
@@ -19,7 +19,7 @@
     #image2{
         position: absolute;
         z-index: 3;
-        top: 39%;
+        top: 22%;
         left: 12%;
         display: block;
         animation: ilustration-fade-slide-rigt 1s ease;
@@ -27,18 +27,18 @@
     #image3{
         position: absolute;
         z-index: 2;
-        top: 67%;
+        top: 50%;
         right: 20%;   
         display: block;
         animation: ilustration-fade-slide-left 1s ease;
     }
     @keyframes ilustration-fade-slide-top {
         0%{
-            top: -53%;
+            top: -60%;
             opacity: 0;
         }
         100%{
-            top: -35%;
+            top: -50%;
             opacity: 1;
         }
     }

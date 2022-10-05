@@ -3,7 +3,7 @@ import { Form } from "../../components/Form";
 import { Header } from "../../components/Header";
 import { TotalMoney } from "../../components/TotalMoney";
 import { useState } from "react";
-import { Launchs } from "../../components/LauchList/index.";
+import { Transactions } from "../../components/TransactionsList/index.";
 import { ToastContainer } from "react-toastify";
 import "./index.css";
 import "react-toastify/dist/ReactToastify.min.css";
@@ -28,8 +28,7 @@ export const HomePage = ({
     setListTransactions(newList);
   };
 
-  const handleFilterTransactions = (value) => {
-    console.log(listTransactions, value);
+  const filterTransactions = (value) => {
     value !== "todos"
       ? setFilterTransactions(
           listTransactions.filter((transation) => transation.type === value)
@@ -46,8 +45,8 @@ export const HomePage = ({
           <TotalMoney list={listTransactions} />
         </section>
         <section className="field-launchs">
-          <FiltersHeader filter={handleFilterTransactions} />
-          <Launchs
+          <FiltersHeader filter={filterTransactions} />
+          <Transactions
             list={filterTransations}
             deleteTransaction={handleTransation}
           />

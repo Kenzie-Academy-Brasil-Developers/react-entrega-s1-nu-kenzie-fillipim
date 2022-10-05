@@ -25,11 +25,13 @@ form > button{
 .input-value{
     position: relative;
 }
+.input-value > input{
+    padding-left: 2.5rem;
+}
 .input-value::after{
     content: "R$";
     position: absolute;
-    top: 17px;
-    right: 14px;
-    font-size: 20px;
-
+    top: 20px;
+    left: 14px;
+    font-size: 1rem;
 }
